@@ -1,0 +1,53 @@
+@import '~antd/dist/antd.compact.less';
+@primary-color: #0052cc; // primary color for all components
+@border-radius-base: 2px; // major border radius
+@text-color: rgba(0, 0, 0, 0.85); // major text color
+@border-color-base: #d9d9d9; // major border color
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+@divider-border: @border-width-base solid rgba(255, 255, 255, 50%);
+
+// ========== Layout ==========
+@layout-header-background: @body-background;
+@layout-header-height: 42px;
+@layout-header-padding: 0 12px;
+.@{layout-prefix-cls} {
+	min-height: 100vh;
+
+	&-header {
+		position: fixed;
+		width: 100vw;
+		z-index: 1000;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #efefef;
+	}
+	&-content {
+		position: relative;
+		margin-top: @layout-header-height;
+	}
+}
+
+// ========= Page ==========
+@page-header-content-padding-vertical: 0px;
+.@{pageheader-prefix-cls} {
+	padding: 0;
+
+	&-heading {
+		padding: 2px 4px;
+
+		&-title {
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+
+	.full-width-content &-content {
+		padding: unset;
+	}
+
+	&-content {
+		padding: 0px 4px 4px;
+	}
+}

@@ -1,0 +1,13 @@
+/** This is global style for an app **/
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');

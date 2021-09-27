@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script>
+			window.basePath = '/';
+			if (window.location.host.includes('314ecorp.com')) {
+				// production
+				// disable react debug tool
+				if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+					window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
+				}
+			} else if (!/localhost:[0-9]{4}/.test(window.location.host)) {
+				// integration
+				var possibleBranch = window.location.pathname.split('/')[1];
+				if (possibleBranch) {
+					window.basePath = '/' + possibleBranch + '/';
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			if (head) {
+				var baseTag = document.createElement('base');
+				baseTag.href = window.basePath;
+				head.appendChild(baseTag);
+			}
+		</script>
+		<meta charset="utf-8" />
+		<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+
+		<style>
+			body {
+				margin: 0;
+				color: rgba(0, 0, 0, 0.65);
+				font-size: 12px;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+					sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+				line-height: 1.5715;
+			}
+
+			#splash-screen {
+				background: linear-gradient(to right, #fff, #fff);
+				position: fixed;
+				width: 100vw;
+				height: 100vh;
+				top: 0px;
+				left: 0px;
+				z-index: 9999;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#logo svg {
+				width: 200px;
+			}
+
+			#splash-screen .loading-animation {
+				color: #bf360c;
+				font-size: 0.8rem;
+				font-weight: 400;
+				line-height: 64px;
+			}
+
+			#splash-screen .loading-animation img {
+				transform: scale(0.6);
+			}
+
+			.vertical-top {
+				vertical-align: top;
+			}
+		</style>
+		<title>Practifly</title>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+		<div id="splash-screen">
+			<span id="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 524.36 514.25">
+        <defs>
+          <style>
+            .a {
+              fill: none;
+            }
+            .b {
+              clip-path: url(#a);
+            }
+            .c {
+              fill: url(#b);
+            }
+            .d {
+              fill: #231f20;
+            }
+          </style>
+          <clipPath id="a">
+            <rect class="a" x="4" y="-0.37" width="1806" height="515" />
+          </clipPath>
+          <linearGradient id="b" x1="7.06" y1="258.5" x2="1799.49" y2="258.5"
+            gradientTransform="matrix(1, 0, 0, -1, 0, 515.63)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#00a9c5" />
+            <stop offset="1" stop-color="#7773b4" />
+          </linearGradient>
+        </defs>
+        <g class="b">
+          <path class="c"
+            d="M470.61,378.34A241.87,241.87,0,0,1,261.13,499.13c-133.66,0-242-108.35-242-242s108.34-242,242-242c129.74,0,235.63,102.11,241.71,230.35a75.44,75.44,0,0,1,15.36,16v-4.31C518.25,115.12,403.13,0,261.13,0S4,115.12,4,257.13,119.12,514.26,261.13,514.26c101.05,0,188.47-58.31,230.49-143.1A73.81,73.81,0,0,1,470.61,378.34Z" />
+          <path class="d"
+            d="M152.58,251.1Q169.83,256,179.06,269t9.22,32.18q0,23-16.58,38.41t-41.78,15.45a58.22,58.22,0,0,1-29.55-7.5q-13.05-7.5-21.75-22.05l8.55-6.75q7.2,13,18.3,19.88a47.36,47.36,0,0,0,25.36,6.82q20.1,0,33.37-12.75t13.28-31.51q0-20.7-13-32.47T128.4,257h-16V246.63h14.7q23.1,0,36.31-11.11t13.2-30.15q0-18.45-12.3-30.53t-31.39-12.11a49.93,49.93,0,0,0-22,5.33,76.61,76.61,0,0,0-21.15,15.82l-6.45-6.45a81.7,81.7,0,0,1,24.08-18.15,60.61,60.61,0,0,1,26.48-6.15q23.4,0,38.62,14.85t15.18,37.65q0,17-9.67,29.55A41.93,41.93,0,0,1,152.58,251.1Z" />
+          <path class="d"
+            d="M262,151.63V351.31L251.49,354V171.89q-6.3,4.63-14.93,9.89t-24.42,13.85l-4.65-9.3q16.5-8.4,29.63-16.81A280.12,280.12,0,0,0,262,151.63Z" />
+          <path class="d"
+            d="M516.2,298.22a59.42,59.42,0,0,0-116.32-9.37H378.53V150.13L280.86,298.21h87.92V354l9.75-2.7v-53.1h19.56a58.55,58.55,0,0,0-.36,6.49A59.42,59.42,0,0,0,503,342.56l-8.79-5a49.48,49.48,0,0,1-86.1-39.37ZM368.78,288.9h-71l71-107.12Zm88.36-33.71a49.56,49.56,0,0,1,46.92,33.66H410.23A49.56,49.56,0,0,1,457.14,255.19Z" />
+        </g>
+      </svg>
+			</span>
+			<span id="error-message" class="loading-animation">
+				<img src="./svg/loading.svg" alt="loading-animation" />
+			</span>
+			<span id="status"> Loading ... </span>
+		</div>
+	</body>
+</html>

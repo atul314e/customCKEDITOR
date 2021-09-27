@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 520 514.25">
+	<defs>
+		<style>
+							.cls-1 {
+								fill: none;
+							}
+							.cls-2 {
+								clip-path: url(#clip-path);
+							}
+							.cls-3 {
+								fill: url(#linear-gradient);
+							}
+							.cls-4 {
+								fill: #231f20;
+							}
+							.cls-5 {
+								fill: url(#linear-gradient-2);
+							}
+							.cls-6 {
+								fill: url(#linear-gradient-12);
+							}
+						</style>
+		<clipPath id="clip-path" transform="translate(0 -0.37)">
+			<rect class="cls-1" width="520" height="515" />
+		</clipPath>
+		<linearGradient id="linear-gradient" x1="3.06" y1="257.5" x2="1795.49" y2="257.5" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#00a9c5" />
+			<stop offset="1" stop-color="#7773b4" />
+		</linearGradient>
+		<linearGradient id="linear-gradient-2" x1="3.06" y1="163.02" x2="1795.49" y2="163.02" xlink:href="#linear-gradient" />
+		<linearGradient id="linear-gradient-12" x1="3.06" y1="254.17" x2="1795.49" y2="254.17" xlink:href="#linear-gradient" />
+	</defs>
+	<title>314e-Logo</title>
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_1-2" data-name="Layer 1">
+			<g class="cls-2">
+				<path id="SVGID" class="cls-3" d="M466.61,378.71A241.87,241.87,0,0,1,257.13,499.5c-133.66,0-242-108.35-242-242s108.34-242,242-242c129.74,0,235.63,102.11,241.71,230.35a75.29,75.29,0,0,1,15.36,16c0-1.43,0-2.87,0-4.31C514.25,115.49,399.13.37,257.13.37S0,115.49,0,257.5,115.12,514.63,257.13,514.63c101.05,0,188.47-58.31,230.49-143.1A74,74,0,0,1,466.61,378.71Z" transform="translate(0 -0.37)" />
+				<path class="cls-4" d="M148.58,251.47q17.25,4.93,26.48,17.92t9.22,32.18q0,23-16.58,38.41t-41.78,15.45a58.23,58.23,0,0,1-29.55-7.5q-13.05-7.5-21.75-22.05l8.55-6.75q7.2,13,18.3,19.88a47.42,47.42,0,0,0,25.36,6.82q20.1,0,33.37-12.75t13.28-31.51q0-20.7-13-32.47t-36.08-11.78h-16V247h14.7q23.1,0,36.31-11.11t13.2-30.15q0-18.45-12.3-30.53T128.92,163.1a50,50,0,0,0-22,5.33,76.54,76.54,0,0,0-21.15,15.82l-6.45-6.45a81.71,81.71,0,0,1,24.08-18.15,60.55,60.55,0,0,1,26.48-6.15q23.4,0,38.62,14.85T183.68,206q0,17-9.67,29.55A41.93,41.93,0,0,1,148.58,251.47Z" transform="translate(0 -0.37)" />
+				<path class="cls-4" d="M258,152V351.68l-10.51,2.7V172.26q-6.3,4.63-14.93,9.89T208.14,196l-4.65-9.3q16.5-8.4,29.63-16.81A279.24,279.24,0,0,0,258,152Z" transform="translate(0 -0.37)" />
+				<path class="cls-4" d="M512.2,298.59a59.42,59.42,0,0,0-116.32-9.37v0H374.53V150.5L276.86,298.58h87.92v55.8l9.75-2.7v-53.1h19.56a58,58,0,0,0-.36,6.49A59.42,59.42,0,0,0,499,342.93l-8.79-5a49.48,49.48,0,0,1-86.1-39.37Zm-147.42-9.32h-71l71-107.12Zm88.36-33.71a49.56,49.56,0,0,1,46.92,33.66H406.23A49.54,49.54,0,0,1,453.14,255.56Z" transform="translate(0 -0.37)" />
+			</g>
+		</g>
+	</g>
+</svg>

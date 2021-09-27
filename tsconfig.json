@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"baseUrl": ".",
+		"outDir": "./dist",
+		"sourceMap": true,
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": false,
+		"allowSyntheticDefaultImports": true,
+		"alwaysStrict": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "esnext",
+		"target": "es6",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": false,
+		"jsx": "react",
+		"removeComments": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"paths": {
+			"assets/*": ["src/assets/*"],
+			"pages/*": ["src/pages/*"],
+			"components/*": ["src/components/*"],
+			"hooks/*": ["src/hooks/*"],
+			"lib/*": ["src/lib/*"],
+			"styles/*": ["src/styles/*"],
+			"utils/*": ["src/utils/*"],
+			"logics/*": ["src/logics/*"],
+			"client/*": ["src/client/*"],
+			"store/*": ["src/store/*"],
+			"actions/*": ["src/actions/*"],
+			"configs/*": ["src/configs/*"],
+			"constants/*": ["src/constants/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "src/__tests__", "src/__mocks__", "src/client/__mocks__", "src/client/__tests__"]
+}
